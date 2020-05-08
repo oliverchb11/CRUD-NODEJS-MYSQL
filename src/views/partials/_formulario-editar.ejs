@@ -1,0 +1,38 @@
+<div class="col-md-5">
+  <div class="card">
+    <div class="card-body">
+      <form action="/editar/<%= data.id %> " method="post">
+        <div class="form-group">
+          <input
+            type="text"
+            name="nombre"
+            class="form-control"
+            placeholder="nombre"
+            value="<%= data.nombre %> "
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            name="direccion"
+            value="<%= data.direccion %> "
+            class="form-control"
+            placeholder="Direccion"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            name="telefono"
+            class="form-control"
+            value="<%= data.telefono %> "
+            placeholder="Telefono"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Editar Comprador
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+AYUDA
+express-myconnection // conexion de mysql dentro los middleware de node o integracion de express conexion
+mysql y permite escribir como sql mas rapido en las consultas de expres
+path unir directorios
+__dirname // la ruta del archivo que lo ejecuta
+morgan dev // morgan es una funcion y resive como parametro varias datos como dev que muestra por 
+consola lo que llega desde el servidor
+-----------------------------
+git
+git status
+git init //inicializamos el repocitorio
+git add -A // agrege todo lo que encuentre en el repocitorio(por primera vez)
+git commit -m //para iniciar la version
+git remote add origon "aca va el link del repocitorio" 
+git push origin master

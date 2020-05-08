@@ -1,0 +1,27 @@
+{
+  "name": "crud-nodejs-mysql",
+  "version": "0.0.1",
+  "description": "\"crud nodejs y MySql\"",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliverchb11/CRUD-NODEJS-MYSQL.git"
+  },
+  "author": "Oliver Charry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oliverchb11/CRUD-NODEJS-MYSQL/issues"
+  },
+  "homepage": "https://github.com/oliverchb11/CRUD-NODEJS-MYSQL#readme",
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "express-myconnection": "^1.0.4",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.3"
+  }
+}
