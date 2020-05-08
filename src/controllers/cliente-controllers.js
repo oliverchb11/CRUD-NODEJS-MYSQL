@@ -32,7 +32,7 @@ controller.save = (req, res) => {
     });
   });
 };
-//muestra los datos en el formulario
+//muestra los datos en el formulario con el metodo get   aca esta en fallo
 controller.edit = (req, res) => {
   const { id } = req.params;
   req.getConnection((err, conn) => {
@@ -43,9 +43,6 @@ controller.edit = (req, res) => {
       "SELECT * FROM comprador WHERE id = ?",
       [id],
       (err, comprador) => {
-        if (err) {
-          next(err);
-        }
         res.render("clienteedit", {
           data: comprador[0],
         });
@@ -53,7 +50,7 @@ controller.edit = (req, res) => {
     );
   });
 };
-//edita los campos ya colocados en el formulario ok ok ok o ok ok
+//edita los campos ya colocados en el formulario con el metodo post ok ok ok o ok ok
 controller.editar = (req, res) => {
   const { id } = req.params;
   const DatosPintados = req.body;
@@ -73,7 +70,7 @@ controller.editar = (req, res) => {
     );
   });
 };
-//Eliminar los datos que estan en la base de datos metodo deleted
+//Eliminar los datos que estan en la base de datos metodo get
 controller.delete = (req, res) => {
   req.getConnection((err, conn) => {
     if (err) {

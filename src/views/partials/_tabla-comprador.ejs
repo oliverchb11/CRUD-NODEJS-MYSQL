@@ -27,13 +27,26 @@
         <td><%= data[i].direccion %></td>
         <td><%= data[i].telefono %></td>
         <td>
-          <a href="/delete/<%= data[i].id %> " class="btn btn-danger">Borrar</a>
-          <a href="/editar/<%= data[i].id %> " class="btn btn-warning"
-            >Editar
+          <a href="/delete/<%= data[i].id %> "
+            ><img
+              height="50"
+              width="50"
+              src="https://cdn.icon-icons.com/icons2/692/PNG/128/seo-social-web-network-internet_262_icon-icons.com_61518.png"
+          /></a>
+          <br />
+          <br />
+          <a href="/editar/<%= data[i].id %> "
+            ><img
+              height="50"
+              width="50"
+              src="https://cdn.icon-icons.com/icons2/620/PNG/128/pencil-striped-symbol-for-interface-edit-buttons_icon-icons.com_56782.png"
+            />
           </a>
         </td>
       </tr>
-      <% } %> <% } %>
+      <% } %> <% } else { %>
+      <h1>No hay datos</h1>
+      <% } %>
     </tbody>
   </table>
 </div>

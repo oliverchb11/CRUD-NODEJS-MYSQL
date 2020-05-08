@@ -11,5 +11,5 @@ git status
 git init //inicializamos el repocitorio
 git add -A // agrege todo lo que encuentre en el repocitorio(por primera vez)
 git commit -m //para iniciar la version
-git remote add origon "aca va el link del repocitorio" 
+git remote add origin "aca va el link del repocitorio" 
 git push origin master

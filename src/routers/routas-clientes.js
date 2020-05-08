@@ -5,5 +5,5 @@ router.get("/", clienteController.list);
 router.post("/add", clienteController.save);
 router.get("/delete/:id", clienteController.delete);
 router.get("/editar/:id", clienteController.edit);
-router.post("/editar/:id", clienteController.editar);
+router.post("/editare/:id", clienteController.editar);
 module.exports = router;
